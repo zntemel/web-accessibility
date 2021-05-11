@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/league.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+    <section>
+     <h2 class="r-fit-text">Introduction to Web Accessibility</h2>
+    </section>
+
+				<section data-markdown data-separator="---">
+      <script type="text/template">
+          #### What is web accesibility 
+           People with disabilities can perceive, understand, navigate and interact with the web. 
+          --- 
+          #### Who are disabled people
+          Anyone who has “a problem in body function or structure, an activity limitation, has a difficulty in executing a task or action; with a participation restriction”.
+
+          <small>* World Health Organization (WHO) </small>
+
+          ---
+
+          #### How many people have disabilities in the world?
+
+          There are currently more than 2 billion disabled people in the world
+          <p class="fragment fade-in-fade-out">that is 37.5% of the world’s population</p>
+      </script>
+     </section>
+
+     <!-- Element attributes -->
+     <section data-markdown>
+      <script type="text/template">
+          ### Disability types
+          - Vision <!-- .element: class="fragment" data-fragment-index="1" -->
+          - Hearing <!-- .element: class="fragment" data-fragment-index="2" -->
+          - Mobility <!-- .element: class="fragment" data-fragment-index="3" -->
+          - Cognitive <!-- .element: class="fragment" data-fragment-index="4" -->
+      </script>
+     </section>
+
+     <section data-markdown>
+			<script type="text/template">
+				#### [Vision](https://webaim.org/articles/visual/) 
+				<small>(blind, low vision, color blindness)</small>
+
+				---
+				<small>1.3 billion people are affected by some form of blindness and visual impairment.<br> This represents 17% of the world’s population.</small>
+	
+
+			</script>
+     </section>
+
+		 <section>
+			<small>Visual Challenges</small>
+
+			<p class="fragment" data-fragment-index="1">Inability to view images or videos</p>
+			<p class="fragment" data-fragment-index="2">Inability to understand and navigate webpage</p>
+			<p class="fragment" data-fragment-index="3">Working in the sunny environment</p>
+		 </section>
+
+		 <!-- Element attributes -->
+		<section data-markdown>
+			<script type="text/template">
+					<pre><code class="html" data-trim>
+						<img 
+						src="ladymacbeth.jpg" 
+						alt="Lady MacBeth" 
+						aria-describedby="p1">
+						<p id="p1">This painting dates back to 1730 
+							and is oil on canvas. It was created by 
+							Jean-Guy Millome, and represents ...</p>
+					</code></pre> <!-- .element: class="fragment" data-fragment-index="1" -->
+
+					<pre><code class="html" data-trim>
+						<a href="knitting.html" target="_blank">All about Knitting 
+							(opens in new window)</a>
+					</code></pre> <!-- .element: class="fragment" data-fragment-index="2" -->				
+			</script>
+		</section>
+
+		<section data-markdown>
+      <script type="text/template">
+       #### Navigation
+
+       - Use clear descriptive text for hyperlinks
+       - Use meaningful text for page title
+
+      </script>
+     </section>
+     
+     <section data-markdown>
+      <script type="text/template">
+       #### Color
+
+       - Avoid using color as only indicator
+       - Use proper contrast ratio
+
+      </script>
+     </section>
+
+		 <section data-markdown>
+			<script type="text/template">
+				####  [Hearing](https://webaim.org/articles/auditory/) 
+				<small>(deaf, hard of hearing)</small>
+
+				---
+				<small>466 million people have a disabling deafness and hearing loss. <br>This represents 6% of the world’s population.</small>
+	
+
+			</script>
+     </section>
+
+		 <section>
+			<small>Audio Challenges</small>
+
+			<p class="fragment" data-fragment-index="1">Listening to audio/ video clips</p>
+			<p class="fragment" data-fragment-index="2">Participate in Real time audio chat </p>
+			<p class="fragment" data-fragment-index="3">People with a low bandwidth connection or noisy environment</p>
+		 </section>
+
+		 <section data-markdown>
+			<script type="text/template">
+				#### Solutions for audio challenges
+
+				- Use captions and subtitles
+				- Use clear simple language 
+
+				<small>[Can you hear me? No, but I can read you.](https://quinnkeast.com/writing/)</small>
+	
+			</script>
+     </section>
+
+
+		 <section data-markdown>
+			<script type="text/template">
+				#### [Motor](https://webaim.org/articles/motor/)
+				<small>(difficulty using fingers hands or arms - limited mobility )</small>
+
+				---
+				<small>75 million people need a wheelchair on a daily basis. This represents 1% of the world’s population.</small>
+	
+			</script>
+     </section>
+
+		 <section>
+			<small>Motor Challenges</small>
+
+			<p class="fragment" data-fragment-index="1">Select small button, icons</p>
+			<p class="fragment" data-fragment-index="2">Participate in Real time text chat</p>
+			<p class="fragment" data-fragment-index="3">Broken touchpad</p>
+		 </section>
+
+		 <section data-markdown>
+      <script type="text/template">
+       #### Solutions for motor challenges
+
+       - Develop keyboard functions for navigation
+       - Correct tab-index
+       - Use semantic markup
+       - Avoid focus trap
+      </script>
+				
+     </section>
+
+		 <section>
+			 	<p>Disabilities should be invisible online</p>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/yx7hdQqf8lE?start=254" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		 </section>
+		 
+		 <section>
+				<p>Disabilities should be invisible also in real life</p>
+				<img width="400" height="315" alt="wheelchair person with steps" src="https://media.istockphoto.com/photos/man-in-wheelchair-outraged-in-front-of-stairs-picture-id1167864134?k=6&m=1167864134&s=612x612&w=0&h=WGuvciHF54gYcvopE56RQdIeFRbmDbRSGS4-1Sn9yNY=">
+				<img width="400" height="315" alt="wheelchair person with steps" src="https://lh3.googleusercontent.com/proxy/Mg56gjQk8-xJXObpfMZuE0sen1CTuq3fQGHrcHS5W65RilJc_xIg0a7oEk1gihF_vEvWfFkZD9XYWII3vbkIGMyysWCCr6U-yd5O-dP7N39mVvJe4jpFdfs">
+		 </section>
+    
+		 
+		 <section data-markdown>
+			<script type="text/template">
+				#### [Cognitive](https://webaim.org/articles/cognitive/)
+				<small>(learning disabilities, distractibility)</small>
+
+				---
+				<small>About 200 million people have an intellectual disability (IQ below 75). This represents 2.6% of the world’s population.</small>
+	
+			</script>
+     </section>
+
+		 <section>
+			<small>Cognitive Challenges</small>
+
+			<p class="fragment" data-fragment-index="1">Hard to understand</p>
+			<p class="fragment" data-fragment-index="2">Too much distraction</p>
+			<p class="fragment" data-fragment-index="3">Temporary Injury</p>
+			<p class="fragment" data-fragment-index="4">Getting old</p>
+		 </section>
+
+
+		 <section data-markdown>
+      <script type="text/template">
+       #### Solutions for cognitive challenges
+
+			 
+       - Provide users enough time to read and use content
+       - Descriptive labels 
+       - Multiple ways to find content
+       - Easily find information and understand relationships between different content sections
+
+      </script>
+     </section>   
+     
+
+		 <section data-markdown>
+			<script type="text/template">
+				#### Evaluation for accesibility 
+				
+				<small>[Lighthouse]((https://developers.google.com/web/tools/lighthouse))</small>
+				<br>
+				<small>[A11Y](https://www.a11yproject.com/checklist/#keyboard)</small>
+				<br>
+				<small>[Axe-core](https://github.com/dequelabs/axe-core/blob/develop/doc/rule-descriptions.md)</small>
+				<br>
+				<small>Tools can detect only 20% to 50% of all accessibility issues. <br> Manual testing is always required.</small>
+	
+			</script>
+     </section>
+
+		 <section data-markdown>
+			<script type="text/template">
+				[Disabled People in the World in 2019](https://www.inclusivecitymaker.com/disabled-people-in-the-world-in-2019-facts-and-figures/#:~:text=There%20are%20currently%20more%20than,37.5%25%20of%20the%20world's%20population)
+
+				[Usability & Web Accessibility](https://usability.yale.edu/web-accessibility/articles)
+				
+				[Accessibility Tools](https://www.w3.org/WAI/ER/tools/)
+
+				[Disability Types](https://webaim.org/articles)
+
+				[Axe-core](https://github.com/dequelabs/axe-core/blob/develop/doc/rule-descriptions.md)
+
+				[Lighthouse accessibility scoring](https://web.dev/accessibility-scoring/)
+
+			</script>
+     </section>
+		 
+		 
+		 <section data-markdown>
+			<script type="text/template">
+				Thank you 
+
+				Zeynep Nur Temel
+
+				<small>🤍 made with [reveal.js](https://revealjs.com/) <small>
+
+			</script>
+     </section>
+
+     
+  <!-- Slide attributes -->
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			Reveal.initialize({
+    controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
