@@ -12,11 +12,6 @@
     "start": "gulp serve",
     "build": "gulp"
   },
-  "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "https://hakim.se"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/hakimel/reveal.js.git"
